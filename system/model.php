@@ -3,13 +3,23 @@
 class Model {
 
 	private $connection;
+	public $mysqli;
 
 	public function __construct()
 	{
 		global $config;
-		
+		/*
 		$this->connection = mysql_pconnect($config['db_host'], $config['db_username'], $config['db_password']) or die('MySQL Error: '. mysql_error());
 		mysql_select_db($config['db_name'], $this->connection);
+		*/
+
+		$this->mysqli = new mysqli($config['db_host'], $config['db_username'], $config['db_password'],$config['db_name']);
+
+		if ($this->mysqli->connect_errno) {
+    		echo "Fallo al contenctar a MySQL: (" . $this->mysqli->connect_errno . ") " . $this->mysqli->connect_error;
+		}
+
+
 	}
 
 	public function escapeString($string)
@@ -45,19 +55,65 @@ class Model {
 	
 	public function query($qry)
 	{
-		$result = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+		$this->mysqli->set_charset("utf8");
+		$result = $this->mysqli->query($qry);
+		if(!$result){
+			return $this->mysqli->error;
+		}
+		
 		$resultObjects = array();
+		
+		while($row = $result->fetch_object()) $resultObjects[] = $row;
+		//$result->close();
+		return $resultObjects;
+	}
 
-		while($row = mysql_fetch_object($result)) $resultObjects[] = $row;
-
+	public function query_array($qry)
+	{
+		$this->mysqli->set_charset("utf8");
+		$result = $this->mysqli->query($qry);
+		if(!$result){
+			return $this->mysqli->error;
+		}
+		
+		$resultObjects = array();
+		
+		while($row = $result->fetch_array(MYSQLI_ASSOC)) $resultObjects[] = $row;
+		//$result->close();
 		return $resultObjects;
 	}
 
 	public function execute($qry)
 	{
-		$exec = mysql_query($qry) or die('MySQL Error: '. mysql_error());
+		$this->mysqli->set_charset("utf8");
+		$exec = $this->mysqli->query($qry);// or die('MySQL Error: '. mysql_error());
 		return $exec;
 	}
+    
+	public function validEmail($email){
+		return filter_var($email, FILTER_VALIDATE_EMAIL);
+	}
+
+	public function validInt($int){
+		return ( preg_match( '/^\d*$/'  , $int) == 1 );
+	}
+
+	public function validNotNull($str){
+		return !empty($str);
+	}
+
+	
+	
+
+	public function last_id(){
+		return $this->mysqli->insert_id;
+	}
+
+   
+
+
+
+
     
 }
 ?>
