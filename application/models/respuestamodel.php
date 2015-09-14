@@ -47,5 +47,20 @@ class RespuestaModel extends Model {
             from usuarios_respuestas ur where  ur.id_usuario = {$idUsuario}";
     return $this->query($sql);
   }
+  public function retrieveByCategory($category, $idUsuario) {
+    $sql = "select
+            ur.id_usuario_respuesta as id,
+            ur.id_usuario as usuario,
+            ur.id_alternativa as respuesta,
+            ur.valor_respuesta as valor,
+            ur.factor_unitario as factorUnitario,
+            ur.resultado_generado as resultadoGenerado,
+            ur.fecha_creacion as fecha
+            from usuarios_respuestas ur
+            inner join alternativas alt on alt.id_alternativa = ur.id_alternativa
+            inner join preguntas pr on pr.id_pregunta = alt.id_pregunta
+            where pr.categoria = '{$category}' and ur.id_usuario = {$idUsuario}";
+    return $this->query($sql);
+  }
 
 }

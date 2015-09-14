@@ -21,7 +21,6 @@ class PreguntaModel extends Model {
             where pr.id_pregunta = {$id}";
     return $this->query($sql);
   }
-
   public function insert($valores = array()) {
     $titulo = isset($valores['titulo']) ? $valores['titulo'] : "";
     $preguntaPadre = isset($valores['preguntaPadre']) ? $valores['preguntaPadre'] : "";
