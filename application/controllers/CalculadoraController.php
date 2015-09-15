@@ -13,11 +13,14 @@ class CalculadoraController extends Controller {
     $preguntaModel = $this->loadModel('PreguntaModel');
     $alternativaModel = $this->loadModel('AlternativaModel');
 
+
+
     $nombres = $this->input['nombres'];
     $apellidos = $this->input['apellidos'];
     $email = $this->input['email'];
     $miembrosFamilia = $this->input['miembrosFamilia'];
     $fechaCreacion = date('Y-m-d');
+
     $data = array_keys($this->input);
     $data = compact($data, "fechaCreacion");
     $lastId = $usuarioModel->insert($data);
@@ -33,7 +36,7 @@ class CalculadoraController extends Controller {
     $preguntaModel = $this->loadModel('PreguntaModel');
     $alternativaModel = $this->loadModel('AlternativaModel');
     $respuestaModel = $this->loadModel('RespuestaModel');
-
+    
     $this->registrarRespuestas($respuestaModel);
 
     $preguntas = $preguntaModel->retrieveByCategory(PreguntaModel::ENERGIA);

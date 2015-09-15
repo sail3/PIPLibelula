@@ -1,0 +1,678 @@
+@media screen and (max-width: 1240px) {
+
+	#content.home .globo{
+		left: 31%;
+	}
+
+	#content.preguntas .globo{
+		right: 14%;
+	}
+}
+
+@media screen and (max-width: 1120px) {
+
+	#content.home .globo{
+		left: 29%;
+	}
+
+	#content.preguntas .globo{
+		right: 10%;
+	}
+}
+
+
+@media screen and (max-width: 1024px) {
+
+	.container{
+		width: 90%;
+	}
+
+	#content.home #reduccion{
+		width: 24%;
+	}
+
+	#content.preguntas .globo{
+		left: 75%;
+	}
+
+	#content.home .globo{
+		left: 28%;
+	}
+
+	#content.preguntas #reduccion {
+    width: 63%;
+	}
+}
+
+
+@media screen and (max-width: 980px) {
+
+
+	#content.home #reduccion {
+    	width: 26%;
+	}
+
+	#content.home #reduccion h3{
+		font-size: 15px;
+	}
+
+	#content.home #reduccion .reducimos .numero {
+    	font-size: 32px;
+    	line-height: 34px;
+    }
+
+    #content.home #reduccion .equivalencia .equi_cant{
+    	font-size: 24px;
+    	line-height: 32px;
+    }
+
+    #content.home .message .info .titulo .texto h3{
+    	margin: 0 0 0 0;
+    }
+
+    #content.preguntas #reduccion {
+    	width: 80%;
+    }
+
+    #content.preguntas .globo {
+    	left: 83%;
+	}
+
+	#content.preguntas .results .tab-links li {
+    	font-size: 14px;
+    }
+
+    #content.preguntas .results .tab-content .resultado_detalle .pie .historia{
+    	font-size: 12px;
+    	width: 75%;
+    }
+
+}
+
+
+@media screen and (max-width: 840px) {
+
+	#content.home{
+		padding-top: 0px;
+	}
+
+
+	#content.home #reduccion h3 {
+	    width: 23%;
+	    line-height: 20px;
+	    float: left;
+	    font-size: 18px;
+	}
+
+	#content.home #reduccion h4{
+		display: none;
+	}
+
+	#content.home #reduccion .reducimos {
+	    width: 42%;
+	    margin-bottom: 0;
+	    float: left;
+	}
+
+	#content.home #reduccion .equivalencia {
+	    float: left;
+	    width: 35%;
+	    margin-top: 0px;
+	}
+
+	#content.home #reduccion .reducimos .numero{
+		font-size: 40px;
+		line-height: 44px;
+	}
+
+	#content.home #reduccion .equivalencia .equi_cant {
+	    font-size: 24px;
+	    line-height: 26px;
+	}
+
+	#content.home .message{
+		width: 100%;
+	}
+
+	#content.home #reduccion {
+	    width: 80%;
+	    padding-top: 0px;
+	    margin: 30px auto;
+	    float: inherit;
+	}
+
+	#content.home .message .info {
+	    width: 100%;
+	}
+
+	#content.home .message .info .titulo .imagen{
+		width: 6%;
+	    float: left;
+	    margin-right: 3%;
+	}
+
+	#content.home .message .info .titulo .texto{
+		width: 46%;
+	}
+
+	#content.home .globo {
+	    left: inherit;
+	    right: 0%;
+	    top: -10%;
+	}
+
+	#content.preguntas .results .tab-links{
+		font-size: 14px;
+	}
+
+	#content.preguntas .results .tab-content,
+	#content.preguntas .results .tab-content .compromisos_listado .tab-ejes li{
+		font-size: 12px;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle .pie .historia{
+		width: 74%;
+		padding-top: 0px;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle .pie .historia ul li{
+		width: 100%;
+    	font-size: 12px;
+	}
+
+	#content.preguntas .results .tab-content .compromisos_listado .tab-compromisos .items{
+		width: 100%;
+		margin-right: 0;
+	}
+
+	#content.preguntas .results .tab-content .resultado_numero .imagen{
+		width: 14%;
+	}
+
+	#content.preguntas .results .tab-content .resultado_numero .imagen img{
+		width: 100%;
+		height: auto;
+	}
+
+	#content.preguntas .results .tab-content .explicacion {
+	    width: 100%;
+	    float: right;
+	    margin-top: 20px;
+	}
+
+	#content.preguntas .results .tab-content .explicacion.agua{
+		width: 60%;
+	}
+
+	.auspiciador {
+    width: 100%;
+    text-align: center;
+}	
+
+}
+
+@media screen and (max-width: 780px) {
+	#content.preguntas .globo {
+	    left: inherit;
+	    right: 0;
+	}
+
+	#content.preguntas #reduccion {
+	    width: 100%;
+	    position: relative;
+    	z-index: 5;
+	}
+
+	#content.preguntas .cuestionario ul li{
+		font-size: 11px;
+	}
+
+	 #content.preguntas .results .tab-content{
+    	padding: 30px;
+    }
+
+    #content.preguntas .results .tab-links li a{
+    	padding: 10px;
+    	height: 50px;
+    }
+
+    #content.preguntas .results .tab-links {
+	    font-size: 12px;
+	    line-height: 16px;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle .pie canvas{
+    	display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 640px) {
+
+	#content.home #reduccion h3,
+	#content.home #reduccion .reducimos,
+	#content.preguntas #reduccion h3,
+	#content.preguntas #reduccion .reducimos{
+		width: 100%;
+		text-align: center;
+	}
+
+	#content.home #reduccion .equivalencia,
+	#content.preguntas #reduccion .equivalencia {
+    	float: initial;
+   		width: 54%;
+    	margin: 10px 0 0 23%;
+	}
+
+	#content.preguntas .question{
+		padding: 30px;
+	}
+
+	#content.preguntas .cuestionario {
+	    left: 0;
+	    position: fixed;
+	    width: 100%;
+	    background-color: #fff;
+	    bottom: 0;
+	}
+
+	#content.preguntas .cuestionario ul li{
+		width: 20%;
+		margin-right: 0%;
+	}
+
+	#content.preguntas .preguntas_listado{
+		margin: 0 0 0 0;
+	}
+
+	#content.preguntas .preguntas_listado ul li h3{
+		width: 100%;
+		margin: 10px auto 30px;
+	}
+
+	#content.preguntas .preguntas_listado ul li.uno label {
+    	width: 85%;
+    }
+
+    #content.preguntas .cuestionario ul li .info{
+    	display: none;
+    }
+
+    #content.preguntas .cuestionario ul li img{
+    	float: left;
+    }
+
+    #content.preguntas .preguntas_listado ul li.tres label{
+    	width: 96%;
+    	margin-bottom: 20px;
+    }
+
+   	#content.preguntas .results .tab-content .compromisos_listado .tab-ejes li {
+	    font-size: 10px;
+	}
+
+
+    #content.preguntas .results .tab-content .resultado_numero{
+    	margin-bottom: 15px;
+    }
+    
+    #content.preguntas .results .tab-content #contribucion .acepta .left label, 
+    #content.preguntas .results .tab-content #contribucion .acepta .right label{
+    	height: 42px;
+    }
+
+    select{
+    	height: 40px;
+    	font-size: 14px;
+    }
+
+    #content.preguntas .globo {
+    	top: 75px;
+    }
+
+    #content.preguntas .results .tab-content .resultado_detalle .pie .historia{
+    	padding-left: 0px;
+    }
+
+    #content.preguntas .results .tab-content .resultado_numero {
+	    margin-bottom: 15px;
+	    width: 50%;
+	    margin-right: 0;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle {
+	    width: 50%;
+	    float: right;
+	    padding-left: 20px;
+	}
+
+	#content.preguntas .results .tab-content .explicacion.agua {
+	    width: 100%;
+	}
+
+	#content.preguntas .results .tab-content .next_step{
+		font-size: 16px;
+    	line-height: 20px;
+	}
+
+	#content.preguntas .results .tab-content #contribucion .acepta .left, 
+	#content.preguntas .results .tab-content #contribucion .acepta .right {
+	    text-align: left;
+	    width: 45%;
+	}
+
+	#content.preguntas .results .tab-links li a {
+	    padding: 15px 10px;
+	    height: 60px;
+	}
+
+	#content.preguntas .results .tab-content .compromisos_listado .tab-compromisos .items .subitems .mitad {
+    	width: 90%;
+	}
+
+	#footer{
+		display: none;
+	}
+
+	#content.preguntas{
+		padding-bottom: 120px;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+
+	#content.preguntas .results .tab-content {
+    	padding: 40px;
+	}
+
+	#content.preguntas .results .tab-links li {
+	    font-size: 12px;
+	}
+
+	#content.preguntas .results .tab-content .resultado_numero {
+	    margin-bottom: 15px;
+	    width: 100%;
+	    margin-right: 0;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle {
+	    width: 100%;
+	    float: right;
+	    padding-left: 0px;
+	}
+
+	#content.preguntas .results .tab-content .explicacion{
+		margin-top: 0px;
+	}
+
+	#content.preguntas .results .tab-content .explicacion .texto,
+	#content.preguntas .results .tab-content .explicacion .imagen,
+	#content.preguntas .results .tab-content .resultado_detalle .pie .historia {
+    	width: 100%;
+    }
+
+    #content.preguntas .results .tab-content .resultado_detalle .pie .historia ul li{
+    	width: 50%;
+    }
+
+    #content.preguntas .results .tab-content .explicacion.agua .imagen{
+    	margin-top: 20px;
+    }
+
+    #content.preguntas .results .tab-content .compromisos_listado {
+	    width: 110%;
+	    float: left;
+	    margin: 30px 0px 30px -5%;
+	}
+
+	#content.preguntas .results .tab-content .compromisos_listado .tab-ejes li {
+	    font-size: 9px;
+	}
+
+	#content.preguntas .results .tab-content #contribucion h2{
+		font-size: 18px;
+		line-height: 22px;
+	}
+
+	#content.preguntas .results .tab-content #contribucion .acepta .left, 
+	#content.preguntas .results .tab-content #contribucion .acepta .right{
+		width: 100%;
+	}
+
+	a.consideraciones {
+	    position: absolute;
+	    right: 36%;
+	    bottom: 10px;
+	}
+
+	#content.preguntas .results .tab-content #compartelo h2{
+		font-size: 28px;
+	    line-height: 30px;
+	    margin: 0 0 5px 0;
+	}
+	#content.preguntas .results .tab-content #compartelo .content .share li {
+    	width: 45%;
+    	margin-bottom: 5px;
+    }
+
+    #content.preguntas .results .tab-content #compartelo .content .share li a{
+    	width: 100%;
+    }
+
+
+	#content.home .message h1 {
+	    color: #795d47;
+	    font-size: 28px;
+	    margin: 0 0 10px 0;
+	    text-transform: uppercase;
+	    line-height: 28px;
+	    text-align: center;
+	}
+
+	#content.home .message h2 {
+    	text-align: center;
+	}
+
+	#content.home .message .info .titulo .texto {
+	    width: 90%;
+	}
+
+	#content.home .message .info {
+	    width: 100%;
+	    font-size: 14px;
+	    line-height: 20px;
+	}
+
+	#content.home .message {
+	    width: 100%;
+	    font-size: 14px;
+	}
+
+	#content.home #reduccion .equivalencia{
+		width: 64%;
+    margin: 10px 0 0 18%;
+	}
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+	#content.preguntas .results .tab-links li {
+	    font-size: 9px;
+	    line-height: 12px;
+	}
+
+	#content.preguntas .results .tab-links li a {
+    	padding: 15px 10px 10px;
+    	height: 50px;
+	}
+
+	#content.preguntas .results .tab-content {
+	    padding: 30px;
+	}
+
+	#content.preguntas .results .tab-content .explicacion {
+	    margin-top: 10px;
+	    text-align: center;
+	}
+
+	#content.preguntas .results .tab-content .compromisos_listado .tab-compromisos{
+		padding: 20px;
+	}
+
+	input[type='checkbox'] + span{
+		line-height: 16px;
+	}
+
+	#content.preguntas .results .tab-content #compartelo .content .share li {
+    	width: 90%;
+    }
+
+    #content.home .globo {
+	    left: inherit;
+	    right: -20%;
+	    top: -5%;
+	}
+
+	#content.home .message{
+		padding: 30px;
+	}
+
+	#content.home #reduccion .equivalencia{
+    	margin: 10px 0 0 7%;
+	}
+
+	#content.home #reduccion .equivalencia, 
+	#content.preguntas #reduccion .equivalencia{
+		min-width: 205px;
+	}
+}
+
+
+@media screen and (max-width: 320px) {
+
+
+	#content.preguntas .results .tab-content .next_step {
+    	font-size: 14px;
+    	line-height: 16px;
+	}
+
+	#content.preguntas .results .tab-content #compartelo .content .share li {
+    	width: 100%;
+    }
+
+    a.consideraciones{
+    	right: 27%;
+    }
+
+    #content.preguntas .results .tab-content .compromisos_listado .tab-compromisos .items .subitems .completo {
+	    width: 100%;
+	  }
+
+	  #content.preguntas .results .tab-content .compromisos_listado .tab-compromisos .items li{
+	  	font-size: 12px;
+	  	line-height: 14px;
+	  }
+
+	  #content.preguntas .results .tab-content .compromisos_listado .tab-ejes li.active a:after{
+	  	width: 30px;
+	  	left: 72%;
+	  }
+
+	  #content.preguntas .results .tab-content .compromisos_listado {
+	    width: 125%;
+	    float: left;
+	    margin: 30px 0px 30px -12%;
+	}
+
+	#content.preguntas .results .tab-content .compromisos_listado .tab-ejes li {
+	    font-size: 7px;
+	}
+
+	#content.preguntas .results .tab-links li a {
+   	 padding: 15px 0px 10px;
+   	}
+
+   	#content.preguntas #reduccion .equivalencia {
+	    float: initial;
+	    width: 75%;
+	    margin: 10px 0 0 11%;
+	}
+
+
+
+	#content.preguntas .globo {
+	    top: 25px;
+	    right: -47px;
+	}
+
+	#content.home .globo {
+	    right: -16%;
+	    top: -8%;
+	}
+
+
+	#content.preguntas .results .tab-content .texto_medidor .left{
+		width: 30%;
+	}
+
+	#content.preguntas .results .tab-content .texto_medidor .right{
+		width: 70%;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle .pie .historia ul li .porcent{
+		margin-right: 0px;
+	}
+
+	#content.preguntas .results .tab-content .resultado_detalle .pie .historia ul li,
+	#content.preguntas .results .tab-content .texto_termometro{
+		font-size: 10px;
+	}
+
+	#content.home .message .info .titulo .texto h3 {
+	    font-size: 18px;
+	    margin: 0 0 0 0;
+	    line-height: 20px;
+	}
+
+	#content.home .message .info .titulo .imagen{
+		display: none;
+	}
+
+	#content.preguntas .preguntas_listado ul li h3{
+		margin: 0px auto 30px;
+		font-size: 26px;
+		    line-height: 30px;
+	}
+
+	#content.preguntas .preguntas_listado ul li.uno label {
+	    width: 100%;
+	}
+
+	.paginador{
+		margin: 40px 0px 0px;
+	}
+
+	.paginador .left,
+	.paginador .right{
+		width: 100%;
+		text-align: center;
+	}
+
+	.paginador .left{
+		margin-bottom: 15px;
+	}
+
+	#content.preguntas .preguntas_listado ul li.dos label{
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+
+
+}

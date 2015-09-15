@@ -27,6 +27,9 @@ class Controller {
 	*/
 	public function setInput($value = array())
 	{
+		$raw = file_get_contents("php://input");
+		print_r(json_encode($raw));exit;
+		// print_r(json_decode(file_get_contents("php://input")), true);exit;
 		$utils = $this->loadHelper('utils_helper');
 		$this->input = $utils->prepare_fields($value);
 	}

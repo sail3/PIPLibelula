@@ -31,7 +31,6 @@ function pip()
         $controller = $config['error_controller'];
         require_once(APP_DIR . 'controllers/' . $controller . '.php');
 	}
-
     // Check the action exists
     if(!method_exists($controller, $action)){
         $controller = $config['error_controller'];

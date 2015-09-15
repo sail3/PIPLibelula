@@ -4,7 +4,7 @@
  */
 
 //Start the Session
-session_start(); 
+session_start();
 
 // Defines
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
@@ -20,7 +20,7 @@ require(ROOT_DIR .'system/pip.php');
 // Define base URL
 global $config;
 define('BASE_URL', $config['base_url']);
-
+define('STATIC_DIR', $config['static_dir']);
 pip();
 
 ?>
